@@ -80,7 +80,7 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #e1e6e6;
+    background-color: #e7f1f1;;
     font-family: monospace;
     font-weight: bold;
     text-align: center
@@ -94,7 +94,7 @@
     background-color: #e7f1f1;
     font-family: monospace;
     font-weight: bold;
-    text-align: center
+    text-align: center;
 }
 
 .aboutme .about_data_text{
@@ -117,7 +117,7 @@
     
 }
 
-.aboutme .about_text{
+.aboutme .about_text {
     font-size: 17px;
     font-family: monospace;
     font-weight: bold;
@@ -126,6 +126,18 @@
     width: 70%;
     margin: auto;
 }
+
+.aboutme .about_text h3{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(110, 105, 105);
+    width: 70%;
+    margin: auto;
+}
+
+
 
 .aboutme .about_img_tile{
     font-size: 20px;
@@ -140,4 +152,45 @@
     width: 30%;
     
 }
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+  }
+  
+  .badge {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    padding: 1.5em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 30px rgba(0, 97, 243, 0.2);
+    font-size: 14px;
+    color: rgb(0, 97, 243);
+  }
+  
+  .badge img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+  
+  .badge span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
 
