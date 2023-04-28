@@ -1,196 +1,87 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #252323;
-    color: white;
-    padding: 20px;
-    width: 97%;
-    margin: auto;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-    height: 70px;
-    transition: 0.5s;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --h1color-primary: #555ea0;
+    --primary-color: #283be6;
+    --secondary-color: #1ed3bb;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
 }
 
-.navbar .logo {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: monospace;
-}
-
-.navbar .logo:hover {
-    color: #37e7e7;
-    font-family: sans-serif;
-    font-size: 28px;
+html {
+    scroll-behavior: smooth;
 
 }
 
-.opentitle {
-    display: none;
-}
-
-
-.navbar .logo:hover .opentitle {
-    display: block;
-    font-size: 55%;
-    font-family: monospace;
-}
-
-.navbar .nav-links {
-    width: 55%;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    list-style: none;
+/* Global Styles */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-links li a {
+/* Links Navbar Styles */
+ul {
+    list-style: none;
+}
 
-    color: white;
+a {
     text-decoration: none;
-    font-size: 18px;
+    color: var(--primary-color);
 }
 
-.nav-links li a:hover {
-    color: #38becf;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
+a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--valor-secundario);
 }
 
-.nav-links li a hr {
+h1 {
+    color: var(--h1color-primary);
+}
+
+/* Navbar Styles */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+.menu-hamburguer {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
     display: none;
 }
 
-.nav-links li a:hover hr {
-    display: block;
-    text-align: center;
+body {
+    font-family: var(--font-family);
 }
-
-
-.aboutme{
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #e7f1f1;;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center
-}
-
-.aboutme .aboutme_cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: #e7f1f1;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-}
-
-.aboutme .about_data_text{
-    font-size: 17px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(58, 54, 54);
-    width: 60%;
-    margin: auto;
-}
-
-
-.aboutme .aboutme__title{
-    font-size: 20px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(58, 54, 54);
-    
-}
-
-.aboutme .about_text {
-    font-size: 17px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(58, 54, 54);
-    width: 70%;
-    margin: auto;
-}
-
-.aboutme .about_text h3{
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(110, 105, 105);
-    width: 70%;
-    margin: auto;
-}
-
-
-
-.aboutme .about_img_tile{
-    font-size: 20px;
-    font-family: monospace;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(58, 54, 54);
-    width: 20%;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 30%;
-    
-}
-
-.badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-  }
-  
-  .badge {
-    background-color: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5em;
-    padding: 1.5em;
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .badge:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 30px 30px rgba(0, 97, 243, 0.2);
-    font-size: 14px;
-    color: rgb(0, 97, 243);
-  }
-  
-  .badge img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
-  
-  .badge span {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-

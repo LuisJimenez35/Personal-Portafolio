@@ -5,123 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Mora Jimenez</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.ePzO8GqSdIAl2d2NazYo2QHaHG?pid=ImgDet&rs=1">
+    <link rel="stylesheet" href="index.css">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+    <!-- Animaciones CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- JS and Scripts CSS CDN -->
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Luis Mora Jimenez</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo" alt="">
-            <p class="opentitle">Def Name():</p>Luis Mora Jimenez
-        </a>
-        <ul class="nav-links">
-            <li><a href="#">About Me
-                    <hr>
-                </a></li>
-            <li><a href="#">Studies
-                    <hr>
-                </a></li>
-            <li><a href="#">Proyects
-                    <hr>
-                </a></li>
-            <li><a href="#">Contact
-                    <hr>
-                </a></li>
+    <!--Navegation Bar-->
+    <nav>
+        <h1>Luis Mora Jimenez</h1>
+        <ul class="navs_points">
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="menu-hamburguer" id="menu-hamburguer">
+            <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
     </nav>
-
-    <div class="aboutme">
-        <div class="aboutme_cart">
-            <div class="about_img_tile">
-                <br>
-                <div class="aboutme__title">
-                    <h1>About Me</h1>
-                    <hr>
-                </div>
-                <br>
-                <div class="aboutme__img">
-                    <img src="images/82769778.png" width="250px" height="250px" alt="">
-                </div>
-                <br><br>
-            </div>
-            <div class="about_data_text">
-                <div class="about_text">
-                    <hr>
-                    <p>¡Hello! My name is Luis Mora Jiménez and I am a Informatic Engineering student. I have been
-                        studying
-                        for more than two years, I have acquired knowledge in various technologies such as Pyhton, Java,
-                        C#
-                        (.Net Framwerk), SQL Server, Mysql, HTML, Css, Java Script, supported by tools such as: Node JS
-                        and
-                        Entity Framework, TypeScript and with Git version control together with Github
-                        <br>
-                        <br>
-                        I am in the goal of continuing to acquire knowledge and experiences, both personal and work,
-                        applying soft skills such as group work, coordination, responsibility, self-learning.
-                    </p>
-                    <hr>
-                    <br>
-                </div>
-
-            </div>
-
-        </div>
-        <br>
-        <h3>Favorite Technologies</h3>
-        <br>
-        <div class="badges">
-            <div class="badge badge-python">
-                <img src="https://th.bing.com/th/id/R.b1c66d2b33344feb0f619c5804026f44?rik=AG78vppewWX0ug&pid=ImgRaw&r=0"
-                    alt="Python Logo">
-                    <span>Python</span>
-            </div>
-            <div class="badge badge-.net">
-                <img src="https://www.jorgehoya.es/wp-content/uploads/2020/02/logotipo_net.png" alt="HTML5 Logo">
-                <span>C# - .Net Framework</span>
-            </div>
-            <div class="badge badge-java">
-                <img src="https://th.bing.com/th/id/R.c2656bd56d27b85fccfceb307298f28e?rik=vfgjAHxsh7UiSA&riu=http%3a%2f%2fimage.digitalinsightresearch.in%2fuploads%2fimagelibrary%2fcbr%2fjava.jpg&ehk=vn97rntDxEtOc3Cbaz4ljrRGWJJhTekLa6AxVl8q%2bDU%3d&risl=&pid=ImgRaw&r=0" alt="HTML5 Logo">
-                <span>Java - JSP</span>
-            </div>
-            <div class="badge badge-html">
-                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML5 Logo">
-                <span>HTML:5</span>
-            </div>
-            <div class="badge badge-css">
-                <img src="https://1000marcas.net/wp-content/uploads/2021/02/CSS-Logo.png" alt="CSS3 Logo">
-                <span>CSS3</span>
-            </div>
-            <div class="badge badge-js">
-                <img src="https://th.bing.com/th/id/R.a984891d74ff7d67f65f4c9d89e386e6?rik=fSFvB5CAESHVYg&pid=ImgRaw&r=0"
-                    alt="JavaScript Logo">
-                    <span>JavaScript</span>
-                </div>
-                <div class="badge badge-bootstrap">
-                    <img src="https://th.bing.com/th/id/R.da53dc3418ca99ce8fec3846274d9cb8?rik=8%2f3t6LJuF%2bqSTQ&riu=http%3a%2f%2fdijitalturk.com%2fveysel%2fwp-content%2fuploads%2f2016%2f12%2fBootstrap.png&ehk=iAfBx%2bpwKgf3yer9TTzBPyxcI0RgmB3p1%2bY4SstOCnU%3d&risl=&pid=ImgRaw&r=0" alt="HTML5 Logo">
-                    <span>Bootstrap</span>
-                </div>
-            <div class="badge badge-sql-server">
-                <img src="https://th.bing.com/th/id/OIP.JSrAdYAFOcWJJ_dTO2Rt1QHaD2?pid=ImgDet&rs=1" alt="Python Logo">
-                <span>SQL Server</span>
-            </div>
-            <div class="badge badge-mysql">
-                <img src="https://th.bing.com/th/id/R.6b47d7fec15d3e1a5de086ac1c808f6d?rik=IIkC39481Md3Bw&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f05%2fMySQL_logo_logotype.png&ehk=aWHquyoObU%2fXSsDiw7VKaqGdBCxP2cRjipdNUO5Q6us%3d&risl=&pid=ImgRaw&r=0"
-                    alt="Mysql">
-                    <span>MySQL</span>
-                </div>
-            <div class="badge badge-git">
-                <img src="https://th.bing.com/th/id/OIP.Vbbgb1GWEFgbuO4vbaqcxgHaEd?pid=ImgDet&rs=1" alt="Git">
-                <span>Git</span>
-            </div>
-            <div class="badge badge-github">
-                <img src="https://th.bing.com/th/id/OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK?pid=ImgDet&rs=1" alt="Github">
-                <span>Github</span>
-            </div>
-        </div>
-    </div>
-
 </body>
+
 
 </html>
